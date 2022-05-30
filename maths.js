@@ -26,7 +26,7 @@ function checkAnswer() {
             backgroundImages.push(`url('images/background${score}.svg')`);
             document.body.style.backgroundImage = backgroundImages;
         } else {
-            alert('Well done! Your maths garden is in full bloom! Want to start again?');
+            alert('Отлично! Твой сад весь в цвету! Начнём ещё раз?');
             score = 0;
             backgroundImages = [];
             document.body.style.backgroundImage = backgroundImages;
@@ -35,7 +35,7 @@ function checkAnswer() {
         if (score != 0) { score--; }
         console.log(`Wrong. Score ${score}`);
 
-        alert('Oops! Check your calculations and try writing the number neater next time!');
+        alert('Ой! Пересчитай и напиши более разборчиво!');
         setTimeout(function () {
             backgroundImages.pop();
             document.body.style.backgroundImage = backgroundImages;
